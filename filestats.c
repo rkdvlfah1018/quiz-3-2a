@@ -31,11 +31,11 @@ int main(int argc, char *argv[])
         printf("Number of disk blocks allocated: %li\n", st.st_blocks);
         printf("Access mode in octal: %o\n", st.st_mode);
         printf("Access mode flags: ");
-        if(S_ISDIR(st.st_mode)){
-            printf("d");
-        }else{
-            printf("-");
-        }
+        // if(S_ISDIR(st.st_mode)){
+        //     printf("d");
+        // }else{
+        //     printf("-");
+        // }
         if(st.st_mode & S_IRUSR){
             printf("r");
         }else{
